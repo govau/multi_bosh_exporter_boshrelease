@@ -1,0 +1,5 @@
+check process multi_bosh_exporter
+  with pidfile /var/vcap/sys/run/multi_bosh_exporter/pid
+  start program "/var/vcap/jobs/multi_bosh_exporter/bin/ctl start"
+  stop program "/var/vcap/jobs/multi_bosh_exporter/bin/ctl stop"
+  group vcap
