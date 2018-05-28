@@ -1,5 +1,6 @@
 bosh_multi_runner/bosh_multi_runner-1.0.0.linux-amd64.tar.gz:
   size: 1068848
+  object_id: a5e2099b-899e-49cb-4ac4-cc30a1213bf3
   sha: f8e0c38996b1fdbcfe9a7cab2b69f32635a49ab1
 community_bosh_exporter/bosh_exporter-3.0.1.linux-amd64.tar.gz:
   size: 4766620
