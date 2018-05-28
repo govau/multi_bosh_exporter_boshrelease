@@ -1,1 +1,6 @@
-name: multi_bosh_exporter_boshrelease
+name: multi_bosh_exporter_boshrelease-https
+blobstore:
+  provider: s3
+  options:
+    bucket_name: dta-govau-multi-bosh-exporter-boshrelease
+    region: ap-southeast-2

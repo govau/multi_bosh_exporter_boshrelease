@@ -1,0 +1,8 @@
+---
+name: multi_bosh_exporter
+
+dependencies:
+- golang-1.10-linux
+
+files:
+- multi_bosh_exporter/**/*.go

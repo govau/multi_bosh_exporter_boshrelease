@@ -1,0 +1,11 @@
+#!/bin/bash -eux
+
+source /var/vcap/packages/golang-1.10-linux/bosh/compile.env
+
+export GOPATH="$PWD"
+mkdir -p "$GOPATH/src"
+ln -s "$PWD" "$GOPATH/src/multi_bosh_exporter"
+
+cd "$GOPATH/src/multi_bosh_exporter"
+mkdir -p "$BOSH_INSTALL_TARGET/bin"
+go build -o "$BOSH_INSTALL_TARGET/bin/multi_bosh_exporter" multi_bosh_exporter-main.go
