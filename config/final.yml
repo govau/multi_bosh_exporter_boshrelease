@@ -1,4 +1,4 @@
-name: multi_bosh_exporter_boshrelease-https
+name: multi_bosh_exporter_boshrelease
 blobstore:
   provider: s3
   options:

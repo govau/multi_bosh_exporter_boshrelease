@@ -7,6 +7,7 @@ templates:
 
 packages:
 - multi_bosh_exporter
+- community_bosh_exporter
 
 properties:
   config:
@@ -20,7 +21,7 @@ properties:
         - bar
         - baz
         files:
-          /var/vcap/jobs/multi_bosh_exporter/config/cert.pem: |
+          /var/vcap/jobs/community_bosh_exporter/config/cert.pem: |
             ------ BEGIN CERT -----
             fdfds
             --- END CERT ---

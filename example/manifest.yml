@@ -1,0 +1,42 @@
+---
+name: multi_bosh_exporter
+
+releases:
+- name: multi_bosh_exporter_boshrelease
+  version: latest
+
+stemcells:
+- alias: default
+  os: ubuntu-trusty
+  version: latest
+
+update:
+  canaries: 2
+  max_in_flight: 1
+  canary_watch_time: 5000-60000
+  update_watch_time: 5000-60000
+
+instance_groups:
+- name: multi_bosh_exporter
+  azs: [z1]
+  instances: 1
+  jobs:
+  - name: multi_bosh_exporter
+    release: multi_bosh_exporter_boshrelease
+    properties:
+      config:
+        commands:
+        - command: /var/vcap/packages/community_bosh_exporter/bin/bosh_exporter
+          args:
+          - "-help"
+          - "-path-to-cert=/var/vcap/jobs/multi_bosh_exporter/config/cert1.pem"
+          files:
+            /var/vcap/jobs/multi_bosh_exporter/config/cert1.pem: |
+              ----- BEGIN CERTIFICATE -----
+              hi!
+              ----- END CERTIFICATE -----
+  vm_type: minimal
+  stemcell: default
+  persistent_disk: 10240
+  networks:
+  - name: default
