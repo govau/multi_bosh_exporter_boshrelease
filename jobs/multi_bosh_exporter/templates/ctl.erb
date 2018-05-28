@@ -2,6 +2,8 @@
 
 JOB=multi_bosh_exporter
 
+mkdir -p /var/vcap/store/${JOB}
+
 RUN_DIR=/var/vcap/sys/run/${JOB}
 LOG_DIR=/var/vcap/sys/log/${JOB}
 CONF_DIR=/var/vcap/jobs/${JOB}/config
