@@ -1,0 +1,7 @@
+#!/bin/bash -eux
+
+VERSION=1.0.0
+
+mkdir -p ${BOSH_INSTALL_TARGET}/bin
+tar xzvf ${BOSH_COMPILE_TARGET}/bosh_multi_runner/bosh_multi_runner-${VERSION}.linux-amd64.tar.gz
+cp -a ${BOSH_COMPILE_TARGET}/bosh_multi_runner-${VERSION}.linux-amd64/* ${BOSH_INSTALL_TARGET}/bin

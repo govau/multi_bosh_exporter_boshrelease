@@ -1,0 +1,5 @@
+---
+name: bosh_multi_runner
+
+files:
+- bosh_multi_runner/bosh_multi_runner-1.0.0.linux-amd64.tar.gz

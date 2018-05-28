@@ -15,7 +15,7 @@ case $1 in
 
     echo $$ > $PIDFILE
 
-    exec /var/vcap/packages/${JOB}/bin/${JOB} -config $CONF_DIR/config.yml \
+    exec /var/vcap/packages/bosh_multi_runner/bin/bosh_multi_runner -config $CONF_DIR/config.yml \
       >>  $LOG_DIR/${JOB}.stdout.log \
       2>> $LOG_DIR/${JOB}.stderr.log
 
