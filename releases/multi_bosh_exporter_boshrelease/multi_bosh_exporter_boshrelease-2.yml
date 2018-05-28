@@ -1,0 +1,20 @@
+name: multi_bosh_exporter_boshrelease
+version: "2"
+commit_hash: 997f4f1
+uncommitted_changes: false
+jobs:
+- name: multi_bosh_exporter
+  version: cd462ab02449c0f696ef6e50a76f8165a933f4f6
+  fingerprint: cd462ab02449c0f696ef6e50a76f8165a933f4f6
+  sha1: 79aea6dea4762224a48ef3189a47388f02095d70
+packages:
+- name: bosh_multi_runner
+  version: a5e5536408158ddf43c5ec53fccccf5714ecfbfa
+  fingerprint: a5e5536408158ddf43c5ec53fccccf5714ecfbfa
+  sha1: 5f2769cee9e7ebbd7a390de3c60ddf2d1dc904e9
+  dependencies: []
+- name: community_bosh_exporter
+  version: be3b81d52871c947e080f95f9e1dfcde2c229f17
+  fingerprint: be3b81d52871c947e080f95f9e1dfcde2c229f17
+  sha1: c06cb5df5d5ef628f47192336537090e59486c7c
+  dependencies: []
