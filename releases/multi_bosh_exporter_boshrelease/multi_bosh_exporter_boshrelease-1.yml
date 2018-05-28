@@ -1,0 +1,26 @@
+name: multi_bosh_exporter_boshrelease
+version: "1"
+commit_hash: "5897020"
+uncommitted_changes: false
+jobs:
+- name: multi_bosh_exporter
+  version: 848c6c0f5dc2d29effb62ceee4263a1f15a8064e
+  fingerprint: 848c6c0f5dc2d29effb62ceee4263a1f15a8064e
+  sha1: 8b8f8634752204e644a7a7cc4f06b40a5b698dd2
+packages:
+- name: community_bosh_exporter
+  version: be3b81d52871c947e080f95f9e1dfcde2c229f17
+  fingerprint: be3b81d52871c947e080f95f9e1dfcde2c229f17
+  sha1: d0002d80d55c071e881e98d677d5b4026d5ae1d0
+  dependencies: []
+- name: golang-1.10-linux
+  version: 1baefde79e99ed3d1df72084315333032a294e59
+  fingerprint: 1baefde79e99ed3d1df72084315333032a294e59
+  sha1: 212148ae3c30da937bea9403c857069c4530c4e3
+  dependencies: []
+- name: multi_bosh_exporter
+  version: 19c7e9d45b0c36b8bca0f5bd3a2130468d6f1a4c
+  fingerprint: 19c7e9d45b0c36b8bca0f5bd3a2130468d6f1a4c
+  sha1: 45b04f1955ffce00cbddd38a8d66ba84b17bdb7f
+  dependencies:
+  - golang-1.10-linux
