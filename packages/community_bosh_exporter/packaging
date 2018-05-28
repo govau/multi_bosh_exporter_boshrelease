@@ -1,0 +1,5 @@
+set -eux
+
+mkdir -p ${BOSH_INSTALL_TARGET}/bin
+tar xzvf ${BOSH_COMPILE_TARGET}/community_bosh_exporter/bosh_exporter-3.0.1.linux-amd64.tar.gz
+cp -a ${BOSH_COMPILE_TARGET}/bosh_exporter-3.0.1.linux-amd64/* ${BOSH_INSTALL_TARGET}/bin

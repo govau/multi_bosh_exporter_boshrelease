@@ -1,0 +1,5 @@
+---
+name: community_bosh_exporter
+
+files:
+- community_bosh_exporter/bosh_exporter-3.0.1.linux-amd64.tar.gz
